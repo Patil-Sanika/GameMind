@@ -59,6 +59,9 @@ function checkAns(idx){
     } else {
         const gameOverSound = document.getElementById("gameOverSound");
         gameOverSound.play();
+        // const backgroundSound = document.getElementById("backgroundSound");
+        // backgroundSound.pause();
+        // backgroundSound.currentTime = 0;
         h2.innerHTML = `Game Over!<br> Your Score Was <b>${level}</b> `;
         document.querySelector("h2").style.backgroundColor = "red";
         document.querySelector("h2").style.color = "red";
@@ -69,6 +72,7 @@ function checkAns(idx){
         reset();
     }
 }
+
 
 // Check user's sequence
 function btnPress(){
@@ -95,3 +99,14 @@ function reset(){
     level = 0;
 }
 
+function backgroundSound(){
+    window.addEventListener('load',reveal);
+    function reveal(){
+        // let reveals = document.querySelectorAll('.upwardAnimation,.downwardAnimation');
+        const backgroundSound = document.getElementById("backgroundSound");
+        backgroundSound.play();
+        // backgroundSound.currentTime = 0;
+    
+    }
+}
+backgroundSound()
