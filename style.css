@@ -1,0 +1,173 @@
+body{
+  padding: 0px;
+  margin: 0px;
+  background-image: url(simon-game-background.jpg);
+  background-size: cover;
+  max-width: 1400px;
+  margin: auto;
+  font-family: cursive;
+}
+ 
+/* Nav Bar  */
+nav{
+  background-color: #34495e9b;
+  color: #fff;
+  width: 80%;
+  height: 50px;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+/* Game Interface  */
+.gameInterface{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 100px;
+  margin: 50px;
+  margin-bottom: 0px;
+}
+
+.playgam{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+h2{
+  background-color: #f1bb0b;
+  color: #000;
+  width:300px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 30px;
+  align-items: center;
+}
+
+/* Color Buttons  */
+.btn{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.1s ease-in-out;
+  overflow: hidden;
+}
+
+/* Buttons container  */
+.btn-container{
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  width: 300px;
+  height: 300px;
+  background-color: #34495ed6; 
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.yellow{
+  background-color: #f1c40f;
+}
+.red{
+  background-color: #e74c3c;
+}
+.purple{
+  background-color: #819ff9;
+}
+.green{
+  background-color: #2ecc71;
+}
+.flash{
+  background-color: #fff;
+}
+.userflash{
+  background-color: green;
+}
+  /* Spacebar */
+.spacebarButton {
+  width: 324px;
+  background-color: #34495ed6;
+  color: #FFF;
+  height: 50px;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 30px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+  
+.SpacebarButton.clicked {
+  background-color: black;
+}
+
+.spacebar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+/* Instructions Section */
+.instructions{
+  background-color: rgba(93, 91, 91, 0.582);
+  color:#fff;
+  width: 50%;
+  padding: 30px;
+}
+
+.instructions h1{
+  margin: 0px;
+}
+
+.instructions p{
+  background-color: #34495ed6; 
+  border-radius: 5px; 
+  padding: 5px;
+}
+
+footer{
+  display: flex;
+  position: absolute;
+  right: 10px;
+}
+
+/* Responsive Design  */
+@media(max-width:1000px){
+  .gameInterface{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+  }
+  .instructions{
+      width: 90%;
+  }
+}
+
+@media (max-width:350px) {
+  .btn-container{
+      width: 250px;
+  }
+  h2{
+      width: 250px;
+  }
+  .virtual-key {
+      width: 200px;
+  }  
+}

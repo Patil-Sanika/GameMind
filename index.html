@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon Say's Game</title>
+    <!-- Link Icons  -->
+    <link rel="icon" href="logo.jpg">
+    <!-- Attached CSS File  -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar of game  -->
+    <nav>
+      <h1>Simon Says Game</h1>
+    </nav>
+    <!-- Game Interface  -->
+    <div class="gameInterface">
+      <div class="playgame">
+        <h2>Press start</h2>
+        <div class="btn-container">
+          <div id="green" class="btn green" type="button" ></div>
+          <div id="red" class="btn red"type="button"></div>
+          <div id="yellow" class="btn yellow"type="button"></div>
+          <div id="purple" class="btn purple"type="button"></div>
+        </div>
+        <!-- Start Button to start game  -->
+        <div class="spacebar">
+          <div class="spacebarButton" id="startButton" type="button">
+            Start here 
+          </div>
+        </div>
+      </div>
+    <!-- Instruction to play game  -->
+      <div class="instructions">
+        <h1>Steps : How to Play Simon Say's Game</h1>
+        <p >Step 1. <strong>Objective : </strong>  Repeat the sequence of colors that Simon plays. The sequence starts with one color and adds one more each time you successfully repeat it.</p>
+        <p>Step 2. <strong>Game Start : </strong> Press start button to start the game.</p>
+        <p>Step 3. <strong>Simon's game Turn : </strong> Simon will play a sequence of colors by lighting up the buttons in a specific order. Watch and remember the sequence of colors.</p>
+        <p>Step 4. <strong>Player's Turn : </strong> After Simon's turn, it's your turn to repeat the sequence. Click or tap the buttons in the same order that Simon played them.</p>
+        <p>Step 5. <strong>Feedback : </strong> If you correctly repeat the sequence, Simon will add one more color to the sequence and play it again. If you make a mistake, the game ends.</p>
+        <p>Step 6. <strong>Winning : </strong> Continue repeating the sequence correctly to see how far you can go. The game gets harder as the sequence gets longer.</p>
+        <p>Step 8. <strong>Restart : </strong> To play again,Press start button to play a new round.</p>
+      </div>
+    </div>
+    <!-- Game footer  -->
+    <footer>
+      <p> Simon Game. Created by sanika</p>
+    </footer> 
+    <!-- Attached gameOverSound  -->
+    <audio id="gameOverSound" volume="1000" src="GameOver.mp3"></audio> 
+    <!-- Attached JavaScript File  -->
+    <script src="script.js"></script>
+  </body>
+</html>
