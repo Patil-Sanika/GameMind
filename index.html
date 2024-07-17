@@ -13,7 +13,7 @@
   <body>
     <!-- Navbar of game  -->
     <nav>
-      <h1>Simon Says Game</h1>
+      <h1>Game Mind</h1>
     </nav>
     <!-- Game Interface  -->
     <div class="gameInterface">
@@ -34,12 +34,12 @@
       </div>
     <!-- Instruction to play game  -->
       <div class="instructions">
-        <h1>Steps : How to Play Simon Say's Game</h1>
-        <p >Step 1. <strong>Objective : </strong>  Repeat the sequence of colors that Simon plays. The sequence starts with one color and adds one more each time you successfully repeat it.</p>
+        <h1>Steps : How to Play Game Mind</h1>
+        <p >Step 1. <strong>Objective : </strong>  Repeat the sequence of colors that Game is plays. The sequence starts with one color and adds one more each time you successfully repeat it.</p>
         <p>Step 2. <strong>Game Start : </strong> Press start button to start the game.</p>
-        <p>Step 3. <strong>Simon's game Turn : </strong> Simon will play a sequence of colors by lighting up the buttons in a specific order. Watch and remember the sequence of colors.</p>
-        <p>Step 4. <strong>Player's Turn : </strong> After Simon's turn, it's your turn to repeat the sequence. Click or tap the buttons in the same order that Simon played them.</p>
-        <p>Step 5. <strong>Feedback : </strong> If you correctly repeat the sequence, Simon will add one more color to the sequence and play it again. If you make a mistake, the game ends.</p>
+        <p>Step 3. <strong>Game's Turn : </strong> Game will play a sequence of colors by lighting up the buttons in a specific order. Watch and remember the sequence of colors.</p>
+        <p>Step 4. <strong>Player's Turn : </strong> After game's turn, it's your turn to repeat the sequence. Click or tap the buttons in the same order that game is played them.</p>
+        <p>Step 5. <strong>Feedback : </strong> If you correctly repeat the sequence, game will add one more color to the sequence and play it again. If you make a mistake, the game ends.</p>
         <p>Step 6. <strong>Winning : </strong> Continue repeating the sequence correctly to see how far you can go. The game gets harder as the sequence gets longer.</p>
         <p>Step 8. <strong>Restart : </strong> To play again,Press start button to play a new round.</p>
       </div>
@@ -50,8 +50,16 @@
     </footer> 
     <!-- Attached gameOverSound  -->
     <audio id="gameOverSound" volume="1000" src="GameOver.mp3"></audio> 
-    
+    <audio id="myAudio" autoplay muted loop>
+      <source src="https://d2ox13tjqpxop5.cloudfront.net/BUGATTI-2023/Bugatti-Audio/bgt-homepage.mp3" type="audio/mpeg">
+      
+    </audio>
     <!-- Attached JavaScript File  -->
-    <script src="script.js"></script>
+    <script src="script.js">
+      window.addEventListener('load', function() {
+            var audio = document.getElementById('myAudio');
+            audio.play();
+        });
+    </script>
   </body>
 </html>
